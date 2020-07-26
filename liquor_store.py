@@ -28,6 +28,7 @@ class  Oscura(Cerveza):
     def __init__(self, nombre, precio, grado_alcohol, tipo_cerveza, pais):
         super().__init__(nombre, precio, grado_alcohol, tipo_cerveza)
         self.pais = pais
+        self._marca = None
 
     def __str__(self):
 
@@ -78,7 +79,7 @@ def run():
     
     lager = Oscura(underline.UNDERLINE  + "LAGER" + underline.END , "$2.40", "4.5 %", "Lager", "Alemania")
     pale_lager = Clara(underline.UNDERLINE  + "PALE LAGER" + underline.END, "$3.20", "3.1 %", "Lager", "Estados Unidos") 
-    weissbier = Clara(underline.UNDERLINE  + "WEISBIER" + underline.END, "$2.90", "5.0 %", "Dark lager", "Austria")
+    weissbier = Clara(underline.UNDERLINE  + "WEISSBIER" + underline.END, "$2.90", "5.0 %", "Dark lager", "Austria")
     irish_dry = Oscura(underline.UNDERLINE  + "IRSH DRY" + underline.END, "$4.80", "6.5 %", "Stout", "Irlanda")
     baltic_porter = Oscura(underline.UNDERLINE  + "BALTIC PORTER" + underline.END, "$3.50", "8.3 %", "Stout", "Rusia")
     sauvignon = Blanco(underline.UNDERLINE + "SAUVIGNON" + underline.END , "$5.60", "9.0 %", "Blanco", "Francia")
